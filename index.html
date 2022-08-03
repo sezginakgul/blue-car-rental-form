@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Lobster&family=Roboto+Slab:wght@500&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="512x512" href="simpson.png">
+    <title >Blue Car Rental</title>
+    <style>
+        form {
+           max-width: 69%;
+           margin: 0 auto;
+          
+        }
+        .pst {
+            text-align: center;
+            margin-top: 5px;
+        }
+        .dct-y {
+             background-color: #3ae374;
+             color:white;
+             font-weight: bolder;
+             font-family: 'Source Sans Pro', sans-serif;
+        }
+        .dct-k {
+             background-color: #ff3838;
+             color:white;
+             font-weight: bolder;
+             font-family: 'Source Sans Pro', sans-serif;
+        }
+        body {
+            max-width: 75%;
+            margin:10px auto;
+            font-weight: bolder;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .border {
+            border: 5px solid #7d5fff;
+            
+        }
+        .inl {
+            display: inline-block;
+            width: 100px; 
+    
+        }
+       
+        div {
+            /* padding: 20px; */
+            margin-bottom: 10px;
+            /* text-align: center; */
+        }
+        #sozlesme {
+            resize: none;
+            width: 80%;
+            height: 100px;
+            margin: 0 10%;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center ; color: #7d5fff; text-shadow:1px 1px #3ae374;">BLUE CAR <span style="text-align:center; color:black;" >Araç Kira Sözleşmesi</span> </h1>
+    
+    <p style="text-align:center; color:#ff3838; ">*Formu Eksiksiz Olarak Doldurunuz!</p>
+    <form action="result.html" method="get">
+        
+        <div>
+            <fieldset class="border"> 
+                <legend>Kişisel Bilgiler</legend>
+
+                <label class="inl" for="id">TC Kimlik No:</label>
+                <input type="text" name="Müsteri-Tc" id="id" maxlength="11" minlength="11" required>
+                
+                <br><br>
+                
+                <label class="inl" for="fname">Ad:</label>
+                <input type="text" name="Adı" id="fname" required>
+                
+                <br><br>
+                
+                <label class="inl" for="lname">Soyad:</label>
+                <input type="text" name="Soy-Adı" id="lname" required>
+
+                <br><br>
+                
+                <label class="inl" for="bdate">Doğum Tarihi:</label>
+                <input type="date" name="Dogum-Tarihi" id="bdate" required>
+
+                <br><br>
+                
+                <label class="inl" for="email">Mail Adresi:</label>
+                <input type="email" name="E-mail" id="email" required>
+                
+                <br><br>
+                <label class="inl" for="foto">Fotoğraf Ekle:</label>
+                <input type="file" name="Fotograf" id="foto" required>
+            
+            </fieldset>
+        </div>
+        
+        <div>
+            <fieldset class="border">
+                <legend>Araç Bilgileri</legend>
+                <label class="inl" for="marka">Araç Markası</label>
+                <select name="Secilen-arac" id="marka">
+                    <option value="Seçim Yapınız">Seçim Yapınız</option>
+                    <option value="Renault - Clio">Renault - Clio</option>
+                    <option value="Renault - Megane">Renault - Megane</option>
+                    <option value="Renault - Fluence">Renault - Fluence</option>
+                    <option value="Renault - Taliant">Renault - Taliant</option>
+                    <option value="Renault - Talisman">Renault - Talisman</option>
+                    <option value="Volkswagen - Golf">Volkswagen - Golf</option>
+                    <option value="Volkswagen - Polo">Volkswagen - Polo</option>
+                    <option value="Volkswagen - Passat">Volkswagen - Passat</option>
+                    <option value="Volkswagen - Tiguan">Volkswagen - Tiguan</option>
+                    <option value="Volkswagen - Touareg">Volkswagen - Touareg</option>
+                    <option value="Peugeot - 208">Peugeot - 208</option>
+                    <option value="Peugeot - 308">Peugeot - 308</option>
+                    <option value="Peugeot - 508">Peugeot - 508</option>
+                    <option value="Peugeot - SUV 2008">Peugeot - SUV 2008</option>
+                    <option value="Peugeot - SUV 3008">Peugeot - SUV 3008</option>
+                    <option value="Peugeot - SUV 5008">Peugeot - SUV 5008</option>
+                </select>
+                
+                <br><br>
+                
+                <label class="inl" for="yıl">Araç Yılı</label>
+                <select name="Arac-Yılı" id="yıl">
+                    <option value="Seçim Yapınız">Seçim Yapınız</option>
+                    <option value="2022">2022</option>
+                </select>
+                
+                <br><br>
+                <label class="inl" for="renk">Araç Rengi</label>  
+                <select name="Renk" id="renk">
+                    <option value="Seçim Yapınız">Seçim Yapınız</option>
+                    <option value="Beyaz">Beyaz</option>
+                    <option value="Kırmızı">Kırmızı</option>
+                    <option value="Mavi">Mavi</option>
+                    <option value="Gri">Gri</option>
+                    <option value="Sarı">Sarı</option>
+                </select>
+
+                <br><br>
+                <label class="inl" for="yakit">Yakıt türü</label>
+                <select name="Yakit" id="yakit">
+                    <option value="Seçim Yapınız">Seçim Yapınız</option>
+                    <option value="Benzin">Benzin</option>
+                    <option value="Dizel">Dizel</option>
+                </select>
+             
+                <br><br>
+
+                
+                <label class="inl" for="vites">Vites Tipi</label>  
+                <select name="Vites" id="vites">
+                    <option value="Seçim Yapınız">Seçim Yapınız</option>
+                    <option value="Otamatik">Otamatik</option>
+                    <option value="Triptronic">Triptronic</option>
+                    <option value="Manuel">Manuel</option>  
+
+                </select>
+            
+            </fieldset>
+            
+        </div>
+        
+        <div>
+            <fieldset class="border">
+                <legend>Kiralama Bilgileri</legend>
+                <div>
+                    <label for="alis">Araç Alış Tarihi</label>
+                    <input type="date" name="Arac-Alis-Tarihi" id="alis" required>
+                </div>
+                <div>
+                    <label for="alis-s">Araç Alış Saati</label>
+                    <input type="time" name="Araç-Alis-Saati" id="alis-s" required>
+                </div>
+                    
+                <div>
+                    <label for="teslim">Araç Teslim Tarihi</label>
+                    <input type="date" name="Arac-Teslim-Tarihi" id="teslim" required>
+                </div>
+                <div>
+                    <label for="teslim-s">Araç Teslim Saati</label>
+                    <input type="time" name="Araç-Teslim-Saati" id="teslim-s" required>
+                </div>
+            
+            </fieldset>
+        </div>
+        
+        <div>
+            <fieldset class="border">
+                <legend>Sözleşme Kopyası</legend>
+                
+                <textarea name="Sözleşme" id="sozlesme" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias esse voluptas similique optio impedit tempora facilis atque cupiditate, consectetur laborum nulla. Sapiente quibusdam obcaecati consequatur laborum, incidunt sunt a corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident rem quae laudantium neque amet ducimus suscipit omnis sed aliquid, temporibus, aperiam praesentium, maxime ipsa quam dicta vel nostrum nobis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi voluptate dolor placeat sed, similique quisquam, nisi ipsa, reiciendis id maiores saepe eaque et enim tempora! Omnis rem itaque provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi distinctio numquam adipisci voluptatum cum repellendus dicta officia voluptatibus, dignissimos quos. Laborum, eveniet. Non sed esse libero deserunt repudiandae quis! Amet! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aut magni fugit ut deleniti quibusdam, quae obcaecati, ex eligendi alias officiis animi veritatis nobis repudiandae hic accusantium totam ad ratione.</textarea>
+                
+                <input type="radio" name="Sözleşme-Mail-Olarak-İletilmesi" id="soz-1" value="İstiyor" required>
+                <label for="soz-1">Sözleşmenin kopyasını mail olarak gönderilmesini istiyorum.</label>
+                <br>
+                <input type="radio" name="Sözleşme-Mail-Olarak-İletilmesi" id="soz-c2" value="İstemiyor" required>
+                <label for="soz-c2">Sözleşmenin kopyasını mail olarak gönderilmesini istemiyorum.</label>
+            </fieldset>
+            
+        </div>
+
+        <div>
+            <fieldset class="border">
+                <legend>Sözleşme Onay</legend>
+                <input type="checkbox" name="Sözleşme-onayı" id="onay" value="Onaylandi" required>
+                <label for="onay">Aşağıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmesini onaylıyorum.</label>
+                
+            </fieldset>
+        </div>
+        
+        
+        
+        <div class="pst">
+            <input  class="dct-y" type="submit" value="Formu Gönder">
+            <input  class="dct-k" type="reset" value="Formu Temizle">
+        </div>
+        
+    </form>
+</body>
+</html>
